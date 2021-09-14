@@ -1,5 +1,5 @@
 name: using-eslint-on-push
-on: [push]
+on: push
 jobs:
   eslint:
     runs-on: ubuntu-latest
