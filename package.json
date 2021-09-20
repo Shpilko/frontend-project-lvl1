@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "[![Actions Status](https://github.com/Shpilko/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/Shpilko/frontend-project-lvl1/actions)",
   "bin": {
-  "brain-games": "bin/brain-games.js"
+    "brain-games": "bin/brain-games.js"
   },
   "main": "index.js",
   "scripts": {
@@ -19,5 +19,8 @@
     "url": "https://github.com/Shpilko/frontend-project-lvl1/issues"
   },
   "homepage": "https://github.com/Shpilko/frontend-project-lvl1#readme",
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
 }
