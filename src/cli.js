@@ -1,6 +1,6 @@
-var readlineSync = require('readline-sync');
+const readlineSync = require('readline-sync');
 
-var userName = readlineSync.question('May I have your name? ');
-console.log('Hi ' + userName + '!');
+const userName = readlineSync.question('May I have your name? ');
+console.log(`Hello, ${userName}!`);
 
 export default userName;
