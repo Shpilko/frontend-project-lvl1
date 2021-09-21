@@ -1,3 +1,6 @@
+brain-even:
+	node bin/brain-even.js
+
 install:
 	npm ci
 
