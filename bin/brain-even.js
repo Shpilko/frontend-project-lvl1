@@ -11,34 +11,41 @@ console.log(`Hello, ${name}!`);
 
 console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
-function getRandomInt(max) {
-  return Math.floor(Math.random() * max);
-}
+const getRandomInt = (min, max) => {
+  let minNum = min;
+  let maxNum = max;
+  minNum = Math.ceil(minNum);
+  maxNum = Math.floor(maxNum);
+  return Math.floor(Math.random() * (maxNum - minNum + 1)) + minNum;
+};
 
-let num = getRandomInt(50);
+let count = 0;
 
-for (let i = 0; i < 3; i += 1) {
-  function getRandomInt(max) {
-    return Math.floor(Math.random() * max);
+while (count !== 3) {
+  const randomInt = getRandomInt(1, 100);
+  console.log(`Question: ${randomInt}`);
+
+  const evenNum = (num) => {
+    if (num % 2 === 0) {
+      return 'yes';
+    }
+    return 'no';
+  };
+
+  const userAnswer = readlineSync.question();
+  const correctAnswer = evenNum(randomInt);
+
+  if (userAnswer === correctAnswer) {
+    count += 1;
+    console.log('Correct!');
   }
+  if (count === 3) {
+    console.log(`Congratulations, ${name}!`);
+    break;
+  }
+  if (userAnswer !== correctAnswer) {
+    console.log(`'${userAnswer}' is a wrong answer ;(. Correct answer was '${correctAnswer}'. Let's try again, ${name}!`);
 
-let num = getRandomInt(50); 
-
-console.log(`Question: ${num}`);
-
-const userAnswer = readlineSync.question();
-
-if (num % 2 !== 0 && userAnswer === `yes`) {
-  console.log(`'yes' is wrong answer ;(. Correct answer was 'no'.
-  Let's try again, ${name}!`);
-  break;
+    break;
+  }
 }
-
-if (num % 2 === 0 && userAnswer === `no`) {
-  console.log(`'no' is wrong answer ;(. Correct answer was 'yes'.
-  Let's try again, ${name}!`);
-  break;
-}
-
-}
-console.log(`Congratulations, ${name}!`);
