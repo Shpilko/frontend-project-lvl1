@@ -6,4 +6,6 @@
 
 ![action-make-lint](https://github.com/Shpilko/frontend-project-lvl1/actions/workflows/github-actions.yml/badge.svg)
 
-<a href="https://asciinema.org/a/T0FVGgg8fjWRkhrDw6kRy6NWk" target="_blank"><img src="https://asciinema.org/a/T0FVGgg8fjWRkhrDw6kRy6NWk.svg" /></a>
+Even Game:
+
+https://asciinema.org/a/T0FVGgg8fjWRkhrDw6kRy6NWk
