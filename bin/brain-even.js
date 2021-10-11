@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 import readlineSync from 'readline-sync';
+import { getRandomInt } from '../src/getRandomInt.js';
 
 console.log('Welcome to the Brain Games!');
 console.log('May I have your name?');
@@ -8,38 +9,22 @@ console.log('May I have your name?');
 const name = readlineSync.question();
 
 console.log(`Hello, ${name}!`);
-
 console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
-const getRandomInt = (min, max) => {
-  let minNum = min;
-  let maxNum = max;
-  minNum = Math.ceil(minNum);
-  maxNum = Math.floor(maxNum);
-  return Math.floor(Math.random() * (maxNum - minNum + 1)) + minNum;
-};
-
-let count = 0;
-
-while (count !== 3) {
+for (let raundCount = 1; raundCount <= 3; raundCount += 1) {
   const randomInt = getRandomInt(1, 100);
   console.log(`Question: ${randomInt}`);
 
-  const evenNum = (num) => {
-    if (num % 2 === 0) {
-      return 'yes';
-    }
-    return 'no';
-  };
+  const evenNum = (randomInt % 2 === 0) ? 'yes' : 'no';
 
   const userAnswer = readlineSync.question();
-  const correctAnswer = evenNum(randomInt);
+  const correctAnswer = evenNum;
+  console.log(`Your answer: ${userAnswer}`);
 
   if (userAnswer === correctAnswer) {
-    count += 1;
     console.log('Correct!');
   }
-  if (count === 3) {
+  if (raundCount === 3) {
     console.log(`Congratulations, ${name}!`);
     break;
   }
