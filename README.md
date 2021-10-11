@@ -8,4 +8,4 @@
 
 Even Game:
 
-https://asciinema.org/a/T0FVGgg8fjWRkhrDw6kRy6NWk
+<a href="https://asciinema.org/a/I46YrEuJ7HEcO7C3gyCzzEJ4z" target="_blank"><img src="https://asciinema.org/a/I46YrEuJ7HEcO7C3gyCzzEJ4z.svg" /></a>
