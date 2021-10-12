@@ -6,6 +6,10 @@
 
 ![action-make-lint](https://github.com/Shpilko/frontend-project-lvl1/actions/workflows/github-actions.yml/badge.svg)
 
-Even Game:
+BRAIN-EVEN
 
 <a href="https://asciinema.org/a/I46YrEuJ7HEcO7C3gyCzzEJ4z" target="_blank"><img src="https://asciinema.org/a/I46YrEuJ7HEcO7C3gyCzzEJ4z.svg" /></a>
+
+BRAIN-CALC
+
+[![asciicast](https://asciinema.org/a/MQI3uJMt7IJFQt8pha9PJQXFz.svg)](https://asciinema.org/a/MQI3uJMt7IJFQt8pha9PJQXFz)
