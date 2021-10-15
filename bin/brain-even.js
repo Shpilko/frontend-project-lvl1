@@ -1,34 +1,38 @@
 #!/usr/bin/env node
 
-import readlineSync from 'readline-sync';
-import { getRandomInt } from '../src/getRandomInt.js';
+import brainEven from '../src/games/even.js';
 
-console.log('Welcome to the Brain Games!');
+brainEven();
 
-const name = readlineSync.question('May I have your name? ');
+// import readlineSync from 'readline-sync';
+// import { getRandomInt } from '../src/getRandomInt.js';
 
-console.log(`Hello, ${name}!`);
-console.log('Answer "yes" if the number is even, otherwise answer "no".');
+// console.log('Welcome to the Brain Games!');
 
-for (let raundCount = 1; raundCount <= 3; raundCount += 1) {
-  const randomInt = getRandomInt(1, 100);
-  console.log(`Question: ${randomInt}`);
+// const name = readlineSync.question('May I have your name? ');
 
-  const evenNum = (randomInt % 2 === 0) ? 'yes' : 'no';
+// console.log(`Hello, ${name}!`);
+// console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
-  const userAnswer = readlineSync.question('Your answer: ');
-  const correctAnswer = evenNum;
+// for (let raundCount = 1; raundCount <= 3; raundCount += 1) {
+//   const randomInt = getRandomInt(1, 100);
+//   console.log(`Question: ${randomInt}`);
 
-  if (userAnswer === correctAnswer) {
-    console.log('Correct!');
-  }
-  if (raundCount === 3) {
-    console.log(`Congratulations, ${name}!`);
-    break;
-  }
-  if (userAnswer !== correctAnswer) {
-    console.log(`'${userAnswer}' is a wrong answer ;(. Correct answer was '${correctAnswer}'.\nLet's try again, ${name}!`);
+//   const evenNum = (randomInt % 2 === 0) ? 'yes' : 'no';
 
-    break;
-  }
-}
+//   const userAnswer = readlineSync.question('Your answer: ');
+//   const correctAnswer = evenNum;
+
+//   if (userAnswer === correctAnswer) {
+//     console.log('Correct!');
+//   }
+//   if (raundCount === 3) {
+//     console.log(`Congratulations, ${name}!`);
+//     break;
+//   }
+//   if (userAnswer !== correctAnswer) {
+//     console.log(`'${userAnswer}' is a wrong answer ;(. Correct answer was '${correctAnswer}'.\nLet's try again, ${name}!`);
+
+//     break;
+//   }
+// }
