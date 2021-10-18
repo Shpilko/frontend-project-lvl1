@@ -13,7 +13,8 @@ const getProgression = (start, step, length) => {
 };
 
 const getQuestionAndCorrectAnswer = () => {
-  const progression = getProgression(getRandomInt(1, 50), getRandomInt(2, 5), 10);
+  const progressionLength = 10;
+  const progression = getProgression(getRandomInt(1, 50), getRandomInt(2, 5), progressionLength);
   const elementCount = 10;
   const firstElement = 0;
   const lastElement = elementCount - 1;
