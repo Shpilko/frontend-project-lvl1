@@ -22,7 +22,7 @@ const getQuestionAndCorrectAnswer = () => {
   const operator = ['+', '-', '*'];
   const randomOperator = operator[getRandomInt(0, 2)];
   const question = `${randomInt1} ${randomOperator} ${randomInt2}`;
-  const correctAnswer = calculated(randomInt1, randomInt2, randomOperator);
+  const correctAnswer = calculated(randomInt1, randomInt2, randomOperator).toString();
 
   return [question, correctAnswer];
 };

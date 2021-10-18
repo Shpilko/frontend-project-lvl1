@@ -18,7 +18,7 @@ const getQuestionAndCorrectAnswer = () => {
   const firstElement = 0;
   const lastElement = elementCount - 1;
   const elementToHide = getRandomInt(firstElement, lastElement);
-  const correctAnswer = progression[elementToHide];
+  const correctAnswer = progression[elementToHide].toString();
 
   progression[elementToHide] = '..';
 

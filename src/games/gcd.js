@@ -16,7 +16,7 @@ const getQuestionAndCorrectAnswer = () => {
   const randomInt1 = getRandomInt(1, 100);
   const randomInt2 = getRandomInt(1, 100);
   const question = `${randomInt1} ${randomInt2}`;
-  const correctAnswer = gcd(randomInt1, randomInt2);
+  const correctAnswer = gcd(randomInt1, randomInt2).toString();
 
   return [question, correctAnswer];
 };
