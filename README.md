@@ -22,42 +22,42 @@ make install
 make link
 ```
 
-BRAIN-EVEN
+## BRAIN-EVEN - Answer "yes" if the number is even, otherwise answer "no".
 
-Answer "yes" if the number is even, otherwise answer "no".
-
+```bash
 $ brain-even
+```
 
 [![asciicast](https://asciinema.org/a/tBcCW19VZECgb1dwMxxUrW7s3.svg)](https://asciinema.org/a/tBcCW19VZECgb1dwMxxUrW7s3)
 
-BRAIN-CALC
+## BRAIN-CALC - What is the result of the expression?
 
-What is the result of the expression?
-
+```bash
 $ brain-calc
+```
 
 [![asciicast](https://asciinema.org/a/BgNpaPpiTeKTmyJqHs5XZaoB7.svg)](https://asciinema.org/a/BgNpaPpiTeKTmyJqHs5XZaoB7)
 
-BRAIN-GCD
+## BRAIN-GCD - Find the greatest common divisor of given numbers.
 
-Find the greatest common divisor of given numbers.
-
+```bash
 $ brain-gcd
+```
 
 [![asciicast](https://asciinema.org/a/BBVGZ90WSQVMBI0xYCv2r8AtZ.svg)](https://asciinema.org/a/BBVGZ90WSQVMBI0xYCv2r8AtZ)
 
-BRAIN-PROGRESSION
+## BRAIN-PROGRESSION - What number is missing in the progression?
 
-What number is missing in the progression?
-
+```bash
 $ brain-progression
+```
 
 [![asciicast](https://asciinema.org/a/wdJnju84UiVLZaW2DYckxs9qO.svg)](https://asciinema.org/a/wdJnju84UiVLZaW2DYckxs9qO)
 
-BRAIN-PRIME
+## BRAIN-PRIME - Answer "yes" if given number is prime. Otherwise answer "no".
 
-Answer "yes" if given number is prime. Otherwise answer "no".
-
+```bash
 $ brain-prime
+```
 
 [![asciicast](https://asciinema.org/a/wsiK7MyAKSDFzsnTqJ2RtQ1wo.svg)](https://asciinema.org/a/wsiK7MyAKSDFzsnTqJ2RtQ1wo)
