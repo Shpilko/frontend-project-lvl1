@@ -6,14 +6,6 @@
 
 ![action-make-lint](https://github.com/Shpilko/frontend-project-lvl1/actions/workflows/github-actions.yml/badge.svg)
 
-BRAIN-EVEN
-
-Answer "yes" if the number is even, otherwise answer "no".
-
-$ brain-even
-
-[![asciicast](https://asciinema.org/a/tBcCW19VZECgb1dwMxxUrW7s3.svg)](https://asciinema.org/a/tBcCW19VZECgb1dwMxxUrW7s3)
-
 ## Installation
 
 ```bash
@@ -29,6 +21,14 @@ make install
 # install the package
 make link
 ```
+
+BRAIN-EVEN
+
+Answer "yes" if the number is even, otherwise answer "no".
+
+$ brain-even
+
+[![asciicast](https://asciinema.org/a/tBcCW19VZECgb1dwMxxUrW7s3.svg)](https://asciinema.org/a/tBcCW19VZECgb1dwMxxUrW7s3)
 
 BRAIN-CALC
 
