@@ -6,6 +6,8 @@
 
 ![action-make-lint](https://github.com/Shpilko/frontend-project-lvl1/actions/workflows/github-actions.yml/badge.svg)
 
+## Brain Games are five small console games. Answer three questions correctly to win. Or start from the beginning. Good luck!
+
 ## Installation
 
 ```bash
