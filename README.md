@@ -14,6 +14,22 @@ $ brain-even
 
 [![asciicast](https://asciinema.org/a/tBcCW19VZECgb1dwMxxUrW7s3.svg)](https://asciinema.org/a/tBcCW19VZECgb1dwMxxUrW7s3)
 
+## Installation
+
+```bash
+# clone the repository
+git clone https://github.com/Shpilko/frontend-project-lvl1.git
+
+# go to repository directory
+cd frontend-project-lvl1
+
+# install dependencies
+make install
+
+# install the package
+make link
+```
+
 BRAIN-CALC
 
 What is the result of the expression?
