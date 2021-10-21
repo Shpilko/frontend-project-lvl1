@@ -19,8 +19,9 @@ const hideNumberInProgression = (progression, index) => {
   return hiddenProgression;
 };
 
+const progressionLength = 10;
+
 const getQuestionAndCorrectAnswer = () => {
-  const progressionLength = 10;
   const firstElement = 0;
   const lastElement = progressionLength - 1;
   const elementToHide = getRandomInt(firstElement, lastElement);
