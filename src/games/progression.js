@@ -24,13 +24,13 @@ const progressionLength = 10;
 const getQuestionAndCorrectAnswer = () => {
   const firstElement = 0;
   const lastElement = progressionLength - 1;
-  const elementToHide = getRandomInt(firstElement, lastElement);
+  const lastElementIndex = getRandomInt(firstElement, lastElement);
   const progression = getProgression(getRandomInt(1, 50), getRandomInt(2, 5), progressionLength);
 
-  const progressionWithHiddenElement = hideNumberInProgression(progression, elementToHide);
+  const progressionWithHiddenElement = hideNumberInProgression(progression, lastElementIndex);
 
   const question = progressionWithHiddenElement.join(' ');
-  const correctAnswer = progression[elementToHide].toString();
+  const correctAnswer = progression[lastElementIndex].toString();
 
   return [question, correctAnswer];
 };
