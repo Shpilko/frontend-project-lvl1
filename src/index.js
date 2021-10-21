@@ -21,9 +21,7 @@ const newGame = (description, getQuestionAndCorrectAnswer) => {
       return;
     }
 
-    if (userAnswer === correctAnswer) {
-      console.log('Correct!');
-    }
+    console.log('Correct!');
   }
 
   console.log(`Congratulations, ${name}!`);
