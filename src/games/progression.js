@@ -12,11 +12,11 @@ const getProgression = (start, step, length) => {
   return progression;
 };
 
-const hideNumberInProgression = (progression, index) => {
+const generateQestion = (progression, index) => {
   const hiddenProgression = [...progression];
   hiddenProgression[index] = '..';
 
-  return hiddenProgression;
+  return hiddenProgression.join(' ');
 };
 
 const progressionLength = 10;
@@ -27,9 +27,7 @@ const getQuestionAndCorrectAnswer = () => {
   const lastElementIndex = getRandomInt(firstElement, lastElement);
   const progression = getProgression(getRandomInt(1, 50), getRandomInt(2, 5), progressionLength);
 
-  const progressionWithHiddenElement = hideNumberInProgression(progression, lastElementIndex);
-
-  const question = progressionWithHiddenElement.join(' ');
+  const question = generateQestion(progression, lastElementIndex);
   const correctAnswer = progression[lastElementIndex].toString();
 
   return [question, correctAnswer];
